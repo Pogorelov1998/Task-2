@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,43 +11,43 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
             double a, b, c, max;
-            Console.WriteLine("Введите длинну первой сторны треугольника");
+            Console.WriteLine("В¬РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ РїРµСЂРІРѕР№ СЃС‚РѕСЂРЅС‹ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°");
             a = Convert.ToDouble(Console.ReadLine());
             max = a;
-            Console.WriteLine("Введите длинну второй сторны треугольника");
+            Console.WriteLine("В¬РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ РІС‚РѕСЂРѕР№ СЃС‚РѕСЂРЅС‹ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°");
             b = Convert.ToDouble(Console.ReadLine());
             if (b > max)
                 max = b;
-            Console.WriteLine("Введите длинну третьей сторны треугольника");
+            Console.WriteLine("В¬РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ С‚СЂРµС‚СЊРµР№ СЃС‚РѕСЂРЅС‹ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°");
             c = Convert.ToDouble(Console.ReadLine());
             if (c > max)
                 max = c;
             if (max == a)
             {
                 if (Math.Pow(a, 2) == Math.Pow(b, 2) + Math.Pow(c, 2))
-                    Console.WriteLine("Треугольник прямоугольный");
+                    Console.WriteLine("вЂњСЂРµСѓРіРѕР»СЊРЅРёРє РїСЂВ¤РјРѕСѓРіРѕР»СЊРЅС‹Р№");
                 else if (Math.Pow(a, 2) > Math.Pow(b, 2) + Math.Pow(c, 2))
-                    Console.WriteLine("Треугольник тупоугольный");
+                    Console.WriteLine("вЂњСЂРµСѓРіРѕР»СЊРЅРёРє С‚СѓРїРѕСѓРіРѕР»СЊРЅС‹Р№");
                 else
-                    Console.WriteLine("Треугольник остроугольный");
+                    Console.WriteLine("вЂњСЂРµСѓРіРѕР»СЊРЅРёРє РѕСЃС‚СЂРѕСѓРіРѕР»СЊРЅС‹Р№");
             }
             if ((max == b) && (b != a))
             {
                 if (Math.Pow(b, 2) == Math.Pow(a, 2) + Math.Pow(c, 2))
-                    Console.WriteLine("Треугольник прямоугольный");
+                    Console.WriteLine("вЂњСЂРµСѓРіРѕР»СЊРЅРёРє РїСЂВ¤РјРѕСѓРіРѕР»СЊРЅС‹Р№");
                 else if (Math.Pow(b, 2) > Math.Pow(a, 2) + Math.Pow(c, 2))
-                    Console.WriteLine("Треугольник тупоугольный");
+                    Console.WriteLine("вЂњСЂРµСѓРіРѕР»СЊРЅРёРє С‚СѓРїРѕСѓРіРѕР»СЊРЅС‹Р№");
                 else
-                    Console.WriteLine("Треугольник остроугольный");
+                    Console.WriteLine("вЂњСЂРµСѓРіРѕР»СЊРЅРёРє РѕСЃС‚СЂРѕСѓРіРѕР»СЊРЅС‹Р№");
             }
             if ((max == c) && (c != a) && (c != b))
             {
                 if (Math.Pow(c, 2) == Math.Pow(b, 2) + Math.Pow(a, 2))
-                    Console.WriteLine("Треугольник прямоугольный");
+                    Console.WriteLine("вЂњСЂРµСѓРіРѕР»СЊРЅРёРє РїСЂВ¤РјРѕСѓРіРѕР»СЊРЅС‹Р№");
                 else if (Math.Pow(c, 2) > Math.Pow(b, 2) + Math.Pow(a, 2))
-                    Console.WriteLine("Треугольник тупоугольный");
+                    Console.WriteLine("вЂњСЂРµСѓРіРѕР»СЊРЅРёРє С‚СѓРїРѕСѓРіРѕР»СЊРЅС‹Р№");
                 else
-                    Console.WriteLine("Треугольник остроугольный");
+                    Console.WriteLine("вЂњСЂРµСѓРіРѕР»СЊРЅРёРє РѕСЃС‚СЂРѕСѓРіРѕР»СЊРЅС‹Р№");
             }
             Console.ReadKey();
         }
